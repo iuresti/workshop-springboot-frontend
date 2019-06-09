@@ -1,0 +1,14 @@
+<div class="container-fluid mt-3 ">
+
+  <div class="row">
+    <app-board-block *ngFor="let board of boards" [board]="board" (updated)="refresh()"></app-board-block>
+
+    <div class="card m-2 cursor-pointer text-center" style="width: 10rem;">
+      <div class="card-body">
+        <h1 class="card-title"><i class="fas fa-plus-circle" (click)="createBoard()"></i></h1>
+      </div>
+    </div>
+
+  </div>
+
+</div>

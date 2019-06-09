@@ -1,0 +1,18 @@
+<div class="card border-primary" style="max-width: 50em;">
+  <div class="card-header text-center">Kanban Board</div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" #username class="form-control" id="username"
+             aria-describedby="usernameHelp" placeholder="Enter username">
+      <small id="usernameHelp" class="form-text text-muted">Type your username</small>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" #password class="form-control" id="password" placeholder="Password">
+    </div>
+    <button type="button" class="btn btn-primary"
+            (click)="doLogin(username.value, password.value)">Login
+    </button>
+  </div>
+</div>

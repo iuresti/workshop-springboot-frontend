@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+footer {
+  margin-top: 40px;
+  padding: 5px 0;
+  border-top: 1px solid #CCC;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

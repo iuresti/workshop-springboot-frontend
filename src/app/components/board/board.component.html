@@ -1,0 +1,21 @@
+<div class="m-2" *ngIf="board">
+  <div class="row">
+    <div class="col-1 pt-2">
+      <a [routerLink]="['/home']" class="text-dark"><i class="fas fa-arrow-circle-left"
+                                                       style="font-size: 2em;"></i></a>
+    </div>
+    <div class="col-11">
+      <h1>{{board.name}}</h1>
+    </div>
+  </div>
+</div>
+<div class="row m-3" *ngIf="columns" style="display: inline-flex; flex-wrap: nowrap;overflow-x: auto;width: 100%;">
+  <app-column *ngFor="let column of columns" [column]="column" (updated)="refresh()"></app-column>
+
+  <div class="card cursor-pointer text-center" style="width: 18rem; height: 6rem;">
+    <div class="card-body">
+      <h1 class="card-title"><i class="fas fa-plus-circle" (click)="createColumn()"></i></h1>
+    </div>
+  </div>
+
+</div>
